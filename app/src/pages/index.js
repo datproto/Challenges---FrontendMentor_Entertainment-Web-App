@@ -21,7 +21,7 @@ export default function Home() {
         <div className="grid">
           <Link href="/search">
             <a className="card">
-              <h3>Search &rarr;</h3>
+              <h3 className="text-red font-bold">Search &rarr;</h3>
               <p>Search all informations by clicking on this button.</p>
             </a>
           </Link>
