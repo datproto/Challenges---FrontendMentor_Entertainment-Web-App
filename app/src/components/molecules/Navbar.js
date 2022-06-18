@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 function Navbar() {
     return (
-        <div className="flex xl:flex-col justify-between items-center xl:items-start xl:justify-start xl:items-center bg-blue-semi-dark xl:h-full text-white p-4 md:p-6 xl:gap-20 xl:rounded-3xl">
+        <div className="flex xl:flex-col justify-between items-center xl:justify-start xl:max-w-[6rem] bg-blue-semi-dark xl:h-full text-white p-4 md:p-6 xl:gap-20 xl:rounded-3xl">
             <Image src="/assets/logo.svg" className="grow-0" width="25" height="20" />
             <div className="gap-6 md:gap-8" style={{ display: 'inherit', flexDirection: 'inherit' }}>
                 <Link href="/">

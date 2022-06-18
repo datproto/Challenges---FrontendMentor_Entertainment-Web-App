@@ -2,5 +2,7 @@
     "files.associations": {
         "*.mdx": "mdx"
     },
+    "emmet.showSuggestionsAsSnippets": true,
+    "editor.snippetSuggestions": "top",
     "emmet.triggerExpansionOnTab": true
 }

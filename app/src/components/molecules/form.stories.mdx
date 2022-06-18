@@ -4,7 +4,59 @@ import Form from './Form'
 
 <Meta title='Molecules/Form' component={Form} />
 
-# Form
+# Form - Login
 <Story name="Login Form">
-    <Form />
+    <Form
+        name="login"
+        inputs={[
+            {
+                type: 'email',
+                name: 'email',
+                placeholder: 'email address'
+            },
+            {
+                type: 'password',
+                name: 'password',
+                placeholder: 'password'
+            }
+        ]}
+        addition={{
+            text: "Don't have an account?",
+            link: {
+                text: 'sign up',
+                url: '#'
+            }
+        }}
+    />
+</Story>
+
+# Form - Sign Up
+<Story name="Sign Up Form">
+    <Form
+        name="sign up"
+        inputs={[
+            {
+                type: 'email',
+                name: 'email',
+                placeholder: 'email address'
+            },
+            {
+                type: 'password',
+                name: 'password',
+                placeholder: 'password'
+            },
+            {
+                type: 'password',
+                name: 're-password',
+                placeholder: 'repeat password'
+            }
+        ]}
+        addition={{
+            text: "Already have an account?",
+            link: {
+                text: 'sign up',
+                url: '#'
+            }
+        }}
+    />
 </Story>

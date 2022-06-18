@@ -10,12 +10,21 @@ module.exports = {
         'greyish': '#5A698F',
         'dark': '#10141E'
       },
-      white: '#fff'
+      white: '#fff',
+      transparent: 'transparent'
+    },
+    fontSize: {
+      'body': {
+        'medium': '15px'
+      }
     },
     extend: {
       fontFamily: {
         'sans': ['Outfit', ...defaultTheme.fontFamily.sans],
-      },},
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }

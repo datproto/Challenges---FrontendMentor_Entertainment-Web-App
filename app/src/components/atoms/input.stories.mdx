@@ -1,0 +1,18 @@
+import { Meta, Story } from '@storybook/addon-docs'
+
+import Input from './Input'
+
+<Meta title='Atoms/Input' component={Input} />
+
+# Form
+<Story name="Text">
+    <Input type="text" name="text" placeholder="some text" />
+</Story>
+
+<Story name="Password">
+    <Input type="password" name="password" placeholder="some password" />
+</Story>
+
+<Story name="Email">
+    <Input type="email" name="email" placeholder="some email" />
+</Story>
