@@ -1,0 +1,19 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs'
+
+import Icon from './Icon'
+
+<Meta title='Atoms/Icon' component={Icon} />
+
+export const Template = (args) => <Icon {...args} />
+
+# Icon
+<Canvas>
+    <Story
+        name="Icon"
+        args={{
+            name: "twitter"
+        }}
+    >
+        {Template.bind({})}
+    </Story>
+</Canvas>

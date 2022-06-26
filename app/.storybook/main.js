@@ -28,6 +28,7 @@ module.exports = {
         },
       },
     },
+    "storybook-addon-pseudo-states"
   ],
   "framework": "@storybook/react",
   "core": {

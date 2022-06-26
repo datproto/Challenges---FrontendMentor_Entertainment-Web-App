@@ -1,0 +1,35 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs'
+
+import Button from './Button'
+
+<Meta title='Atoms/Button' component={Button} />
+
+export const Template = (args) => <Button {...args} />
+
+# Button - Normal
+<Canvas>
+    <Story
+        name="Normal"
+        parameters={{
+            pseudo: { hover: false }
+        }}
+        args={{
+            content: "Login to your account"
+        }}
+    >
+        {Template.bind({})}
+    </Story>
+</Canvas>
+
+# Button - Hover
+<Story
+    name="Hover"
+    parameters={{
+        pseudo: { hover: true }
+    }}
+    args={{
+        content: "Login to your account"
+    }}
+>
+    {Template.bind({})}
+</Story>
