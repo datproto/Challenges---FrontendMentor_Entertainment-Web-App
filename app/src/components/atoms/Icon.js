@@ -5,7 +5,8 @@ import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import
 
 function Icon({ name }) {
     return (
-        <FontAwesomeIcon icon={brands("twitter")} />
+        // <FontAwesomeIcon icon={brands(`${name}`)} />
+        <div></div>
     )
 }
 
